@@ -1,5 +1,4 @@
 module "ses_selfcare_it" {
-  count               = var.enable_aws_ses ? 1 : 0
   source              = "github.com/pagopa/terraform-aws-ses.git?ref=v1.2.0"
   domain              = "pagopa.it"
   mail_from_subdomain = "email"
