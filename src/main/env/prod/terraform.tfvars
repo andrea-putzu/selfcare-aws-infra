@@ -10,3 +10,6 @@ tags = {
   Source      = "<git repo url>"
   CostCenter  = "<eg: TS310 - PAGAMENTI e SERVIZI>"
 }
+
+enable_aws_ses = true
+aws_region     = "eu-south-1"

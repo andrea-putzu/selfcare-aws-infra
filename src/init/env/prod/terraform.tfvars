@@ -1,9 +1,9 @@
 environment = "Dev"
 tags = {
   "CreatedBy"   = "Terraform"
-  "Environment" = "Dev"
+  "Environment" = "Prod"
   "Owner"       = "PagoPa"
   "Scope"       = "tfstate"
-  "Source"      = "<git repository url>"
+  "Source"      = "https://github.com/pagopa/selfcare-aws-infra"
   "name"        = "S3 Remote Terraform State Store"
 }

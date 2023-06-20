@@ -75,3 +75,14 @@ variable "tags" {
     CreatedBy = "Terraform"
   }
 }
+
+variable "enable_aws_ses" {
+  type        = bool
+  description = "Enable AWS Send mail"
+  default     = false
+}
+
+variable "aws_region" {
+  type        = string
+  description = "The AWS Region"
+}
