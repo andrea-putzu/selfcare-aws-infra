@@ -1,6 +1,6 @@
 module "ses_selfcare_it" {
   source              = "github.com/pagopa/terraform-aws-ses.git?ref=v1.2.0"
-  domain              = "pagopa.it"
+  domain              = "selfcare.pagopa.it"
   mail_from_subdomain = "email"
   aws_region          = var.aws_region
 

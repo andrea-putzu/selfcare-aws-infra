@@ -1,4 +1,4 @@
-environment = "Dev"
+environment = "Prod"
 tags = {
   "CreatedBy"   = "Terraform"
   "Environment" = "Prod"
@@ -7,3 +7,5 @@ tags = {
   "Source"      = "https://github.com/pagopa/selfcare-aws-infra"
   "name"        = "S3 Remote Terraform State Store"
 }
+
+github_repository = "pagopa/selfcare-aws-infra"
