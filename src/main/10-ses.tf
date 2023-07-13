@@ -34,3 +34,30 @@ module "ses_selfcare_it" {
   #   reputation_bounce_rate_period    = 5 * 60 # 5min
   # }
 }
+
+
+module "ses_notifichedigitali_it" {
+  source              = "github.com/pagopa/terraform-aws-ses.git?ref=v1.2.0"
+  domain              = "imprese.notifichedigitali.it"
+  mail_from_subdomain = "email"
+  aws_region          = var.aws_region
+
+  iam_permissions = [
+    "ses:SendCustomVerificationEmail",
+    "ses:SendEmail",
+    "ses:SendRawEmail",
+    "ses:SendTemplatedEmail"
+  ]
+
+  ses_group_name = "ImpreseNotificheDigitaliSES"
+  user_name      = "ImpreseNotificheDigitali"
+
+  iam_additional_statements = [
+    {
+      sid       = "Statistics"
+      actions   = ["ses:GetSendQuota"]
+      resources = ["*"]
+    }
+  ]
+
+}
