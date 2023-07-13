@@ -49,8 +49,8 @@ module "ses_notifichedigitali_it" {
     "ses:SendTemplatedEmail"
   ]
 
-  ses_group_name = "SelfcareSES"
-  user_name      = "Selfcare"
+  ses_group_name = "ImpreseNotificheDigitaliSES"
+  user_name      = "ImpreseNotificheDigitali"
 
   iam_additional_statements = [
     {
