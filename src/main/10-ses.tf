@@ -63,7 +63,7 @@ module "ses_notifichedigitali_it" {
 }
 
 
-module "ses_selfcare_it" {
+module "ses_areariservata_it" {
   source              = "github.com/pagopa/terraform-aws-ses.git?ref=v1.2.0"
   domain              = "areariservata.pagopa.it"
   mail_from_subdomain = "email"
